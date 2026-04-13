@@ -1,0 +1,41 @@
+
+---
+
+# 📄 JSON Example (API Request + Config)
+
+You can use this JSON either as a **config file** or **request payload example**:
+
+```json
+{
+  "app": {
+    "name": "Vishakha's AI Assistant",
+    "version": "1.0.0",
+    "description": "Simple AI chatbot using OpenAI API"
+  },
+  "api": {
+    "endpoint": "https://api.openai.com/v1/chat/completions",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer YOUR_API_KEY"
+    }
+  },
+  "request_body": {
+    "model": "gpt-4o-mini",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "hi how are you?"
+      }
+    ]
+  },
+  "ui": {
+    "title": "Vishakha's AI Assistant",
+    "input_placeholder": "Ask me anything...",
+    "send_button": "Send"
+  }
+}
